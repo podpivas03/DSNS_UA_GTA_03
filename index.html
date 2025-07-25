@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ДСНС | GTA RP</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Вітаємо вас на офіційному сайті ДСНС GTA RP</h1>
+    <p class="subtitle">Служба порятунку та відваги</p>
+  </header>
+
+  <section class="info">
+    <h2>Про нас</h2>
+    <p>
+      ДСНС у GTA RP — це герої, які рятують життя та забезпечують безпеку на сервері. 
+      Ми забезпечуємо ліквідацію пожеж, надаємо першу медичну допомогу та реагуємо на надзвичайні ситуації.
+    </p>
+    <p class="highlight">Відкритий набір до лав ДСНС — приєднуйся!</p>
+  </section>
+
+  <section class="buttons">
+    <button onclick="showSection('kerivnytstvo')">Керівництво</button>
+    <button onclick="showSection('contact')">Контакти</button>
+    <button onclick="showSection('join')">Як вступити</button>
+  </section>
+
+  <section id="kerivnytstvo" class="hidden content">
+    <h2>Керівництво</h2>
+    <ul>
+      <li>Генерал СЦЗ — Микита Анцибор</li>
+      <li>Полковник СЦЗ — Ігор Коваленко</li>
+      <li>Майор СЦЗ — Артем Шевченко</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="hidden content">
+    <h2>Контакти</h2>
+    <p>Телеграм: @dsns_official</p>
+    <p>Discord: DСНС GTA RP</p>
+  </section>
+
+  <section id="join" class="hidden content">
+    <h2>Як вступити до ДСНС?</h2>
+    <ol>
+      <li>Напиши заявку на офіційному Discord сервері.</li>
+      <li>Пройди співбесіду з керівником підрозділу.</li>
+      <li>Отримай навчання та форму.</li>
+    </ol>
+    <p class="highlight">Не зволікай — стань героєм уже сьогодні!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 ДСНС GTA RP. Всі права захищені.</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.content').forEach(el => el.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
